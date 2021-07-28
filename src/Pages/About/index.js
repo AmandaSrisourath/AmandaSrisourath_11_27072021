@@ -1,19 +1,18 @@
-import {Link} from "react-router-dom";
+import React from "react";
+import Header from "../../Components/Header";
+import aboutBanner from "../../Assets/about-banner.png";
 
-function About() {
-    return (
-        <div>
-            <ul>
-                <li>
-                    <Link id={"home"} to="/">Accueil</Link>
-                </li>
-                <li>
-                    <Link id={"about"} to="/about">A propos</Link>
-                </li>
-            </ul>
-            <p>A propos</p>
-        </div>
-    );
+class About extends React.Component {
+    render() {
+        return (
+            <div>
+                <Header name="A propos" currentPage="about"/>
+
+                <img id="banner" src={aboutBanner} />
+
+            </div>
+        );
+    }
 }
 
 export default About;
