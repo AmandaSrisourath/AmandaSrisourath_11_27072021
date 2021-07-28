@@ -1,19 +1,37 @@
-import {Link} from "react-router-dom";
+import React from "react";
+import Header from "../../Components/Header";
+import homeBanner from "../../Assets/home-banner.png";
 
-function Home() {
-    return (
-        <div>
-            <ul>
-                <li>
-                    <Link id={"home"} to="/">Accueil</Link>
-                </li>
-                <li>
-                    <Link id={"about"} to="/about">A propos</Link>
-                </li>
-            </ul>
-            <p>Accueil</p>
-        </div>
-    );
+class Home extends React.Component {
+    render() {
+        return (
+            <div>
+                <Header name="Accueil" currentPage="home" />
+
+                <img id="banner" src={homeBanner} />
+
+                <div id="main">
+                    <div className="red-block">
+                    </div>
+
+                    <div className="red-block">
+                    </div>
+
+                    <div className="red-block">
+                    </div>
+
+                    <div className="red-block">
+                    </div>
+
+                    <div className="red-block">
+                    </div>
+
+                    <div className="red-block">
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Home;
