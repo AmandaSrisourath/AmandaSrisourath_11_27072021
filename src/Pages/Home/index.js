@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header";
 import Location from "./Location";
+import Footer from "../../Components/Footer";
 
 class Home extends React.Component {
     render() {
@@ -20,6 +21,8 @@ class Home extends React.Component {
                     <Location />
                     <Location />
                 </div>
+
+                <Footer />
             </div>
         );
     }

@@ -73,9 +73,7 @@ a#about:active {
   border-radius: 25px;
   width: 1240px;
   height: 829px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 43px;
+  margin: 43px auto;
   padding-top: 56px;
 }
 
@@ -91,4 +89,18 @@ a#about:active {
   color: white;
   font-size: 18px;
   margin: 268px 20px 20px;
+}
+
+#footer {
+  background-color: black;
+  text-align: center;
+  padding-top: 68px;
+  padding-bottom: 28px;
+}
+
+#logo-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 }
