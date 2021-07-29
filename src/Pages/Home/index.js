@@ -9,7 +9,7 @@ class Home extends React.Component {
             <div>
                 <Header name="Accueil" currentPage="home" />
 
-                <div id="bannerBackground">
+                <div id="home-banner">
                     <p className="banner-title">Chez vous, partout et ailleurs</p>
                 </div>
 
