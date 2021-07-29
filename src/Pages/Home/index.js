@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Components/Header";
-import homeBanner from "../../Assets/home-banner.png";
+import Location from "./Location";
 
 class Home extends React.Component {
     render() {
@@ -8,26 +8,17 @@ class Home extends React.Component {
             <div>
                 <Header name="Accueil" currentPage="home" />
 
-                <img id="banner" src={homeBanner} />
+                <div id="bannerBackground">
+                    <p className="banner-title">Chez vous, partout et ailleurs</p>
+                </div>
 
                 <div id="main">
-                    <div className="red-block">
-                    </div>
-
-                    <div className="red-block">
-                    </div>
-
-                    <div className="red-block">
-                    </div>
-
-                    <div className="red-block">
-                    </div>
-
-                    <div className="red-block">
-                    </div>
-
-                    <div className="red-block">
-                    </div>
+                    <Location />
+                    <Location />
+                    <Location />
+                    <Location />
+                    <Location />
+                    <Location />
                 </div>
             </div>
         );
