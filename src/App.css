@@ -40,22 +40,13 @@ a#about:active {
   justify-content: space-between;
 }
 
-#banner {
-  width: 1240px;
-  height: 223px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
-}
-
-#bannerBackground {
-  width: 1240px;
-  height: 223px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
+#home-banner {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/home-banner.png");
+  width: 1240px;
+  height: 223px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
 }
 
 .banner-title {
@@ -73,7 +64,7 @@ a#about:active {
   border-radius: 25px;
   width: 1240px;
   height: 829px;
-  margin: 43px auto;
+  margin: 43px auto 0px;
   padding-top: 56px;
 }
 
@@ -96,6 +87,7 @@ a#about:active {
   text-align: center;
   padding-top: 68px;
   padding-bottom: 28px;
+  margin-top: 43px;
 }
 
 #logo-footer {
@@ -103,4 +95,51 @@ a#about:active {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
+}
+
+#about-banner {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/about-banner.png");
+  width: 1240px;
+  height: 223px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+#title {
+  width: 1023px;
+  height: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 33px;
+  background-color: #FF6060;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+#description {
+  width: 1023px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F7F7F7;
+  color: #FF6060;
+}
+
+h1 {
+  font-size: 24px;
+  padding-left: 18px;
+  padding-top: 9px;
+}
+
+p.description {
+  margin: 0;
+  padding: 36px 27px 19px 18px;
+  font-size: 24px;
+}
+
+.arrow {
+  position: relative;
+  left: 95%;
+  bottom: 100%;
 }
