@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Components/Header";
-import Location from "./Location";
+import LocationCard from "./LocationCard";
 import Footer from "../../Components/Footer";
 
 class Home extends React.Component {
@@ -14,12 +14,12 @@ class Home extends React.Component {
                 </div>
 
                 <div id="main">
-                    <Location />
-                    <Location />
-                    <Location />
-                    <Location />
-                    <Location />
-                    <Location />
+                    <LocationCard />
+                    <LocationCard />
+                    <LocationCard />
+                    <LocationCard />
+                    <LocationCard />
+                    <LocationCard />
                 </div>
 
                 <Footer />

@@ -1,12 +1,13 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class LocationCard extends React.Component {
     render() {
         return (
-            <a className="location">
+            <Link className="location-card" to="/Location">
                 <p className="location-title">Titre de la location</p>
-            </a>
-        )
+            </Link>
+    )
     }
 }
 
