@@ -175,3 +175,60 @@ a#error-link {
   font-size: 18px;
   text-decoration: underline;
 }
+
+#location-banner {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#location-title {
+  padding-left: 0;
+}
+
+#tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+#location-detail {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FF6060;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+#location-contact {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#host {
+  margin-left: 10px;
+  margin-bottom: 24px;
+}
+
+p#name {
+  margin-top: 10px;
+  width: 100px;
+}
+
+.tag {
+  margin-top: 2px;
+  margin-right: 10px;
+  padding: 3px 41px 2px 40px;
+  color: white;
+  font-size: 14px;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
