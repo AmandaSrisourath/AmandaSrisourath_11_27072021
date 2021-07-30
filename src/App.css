@@ -132,9 +132,13 @@ h1 {
   padding-top: 9px;
 }
 
+h1:hover {
+  cursor: pointer;
+}
+
 p.description {
   margin: 0;
-  padding: 36px 27px 19px 18px;
+  padding: 34px 27px 19px 18px;
   font-size: 24px;
 }
 
