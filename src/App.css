@@ -15,8 +15,11 @@ ul {
   align-items: center;
 }
 
-#home, #about {
+a:link {
   text-decoration: none;
+}
+
+#home, #about {
   color: #FF6060;
   font-size: 24px;
 }
@@ -68,7 +71,7 @@ a#about:active {
   padding-top: 56px;
 }
 
-.location {
+.location-card {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url("Assets/red-block.png");
   width: 340px;
   height: 340px;
@@ -146,4 +149,29 @@ p.description {
   position: relative;
   left: 95%;
   bottom: 100%;
+}
+
+#error-number{
+  text-align: center;
+  font-size: 288px;
+  font-weight: 700;
+  color: #FF6060;
+  margin-top: 163px;
+  margin-bottom: 0;
+}
+
+#error-text {
+  text-align: center;
+  color: #FF6060;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 182px;
+}
+
+a#error-link {
+  display: flex;
+  justify-content: center;
+  color: #FF6060;
+  font-size: 18px;
+  text-decoration: underline;
 }

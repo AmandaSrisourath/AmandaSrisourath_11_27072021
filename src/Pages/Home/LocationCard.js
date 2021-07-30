@@ -1,13 +1,13 @@
 import React from "react";
 
-class Location extends React.Component {
+class LocationCard extends React.Component {
     render() {
         return (
-            <div className="location">
+            <a className="location">
                 <p className="location-title">Titre de la location</p>
-            </div>
+            </a>
         )
     }
 }
 
-export default Location;
+export default LocationCard;

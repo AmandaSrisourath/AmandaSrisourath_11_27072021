@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Location from "./Pages/Location";
+import PageNotFound from "./Pages/404";
 
 function App() {
     return (
@@ -15,9 +17,15 @@ function App() {
                 <Route exact path="/">
                     <Home />
                 </Route>
+                <Route path="/location">
+                    <Location />
+                </Route>
                 <Route path="/about">
                     <About />
                 </Route>
+                <Route exact path="/" />
+                    <PageNotFound />
+                <Route />
             </Switch>
         </Router>
     );
