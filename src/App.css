@@ -33,14 +33,14 @@ ul {
 }
 
 #header {
-  width: 1240px;
+  width: 86%;
   margin: 40px auto 63px auto;
   display: flex;
   justify-content: space-between;
 }
 
 .banner {
-  width: 1240px;
+  width: 86%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -64,8 +64,7 @@ ul {
   flex-wrap: wrap;
   background-color: #F7F7F7;
   border-radius: 25px;
-  width: 1240px;
-  height: 829px;
+  width: 86%;
   margin: 43px auto 0;
   padding-top: 56px;
 }
@@ -75,6 +74,7 @@ ul {
   width: 340px;
   height: 340px;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .location-title {
@@ -266,3 +266,64 @@ p.description.equipments-description {
   padding: 0;
 }
 
+@media only screen and (min-width : 375px) and (max-width : 768px) {
+  #header {
+    width: 89%;
+    height: 47px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+
+  #logo {
+    width: 145px;
+    height: 47px;
+  }
+
+  a#home {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  a#about {
+    margin-left: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  #home-banner {
+    width: 89%;
+    height: 111px;
+    background-position: center;
+  }
+
+  .banner-title {
+    font-size: 24px;
+    margin: 31px 102px 32px 16px;
+    line-height: 24px;
+  }
+
+  div#main {
+    background-color: white;
+    width: 335px;
+    height: auto;
+    margin-top: 0;
+    padding-top: 22px;
+  }
+
+  a.location-card {
+    height: 255px;
+    margin-bottom: 20px;
+  }
+
+  .location-title {
+    margin: 188px 20px 15px 20px;
+  }
+
+  div#footer {
+    margin-top: 20px;
+  }
+
+  img#logo-rights-footer {
+    width: 50%;
+  }
+}

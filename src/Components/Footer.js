@@ -7,7 +7,7 @@ class Footer extends React.Component {
         return (
             <div id="footer">
                 <img id="logo-footer" src={logoFooter} />
-                <img src={AllRights} />
+                <img id="logo-rights-footer" src={AllRights} />
             </div>
         );
     }
