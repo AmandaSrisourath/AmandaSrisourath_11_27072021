@@ -43,13 +43,16 @@ a#about:active {
   justify-content: space-between;
 }
 
-#home-banner {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/home-banner.png");
+.banner {
   width: 1240px;
-  height: 223px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
+}
+
+#home-banner {
+  height: 223px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/home-banner.png");
 }
 
 .banner-title {
@@ -101,19 +104,18 @@ a#about:active {
 }
 
 #about-banner {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/about-banner.png");
-  width: 1240px;
   height: 223px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/about-banner.png");
+}
+
+.width-margin-about {
+  width: 1023px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 25px;
 }
 
 #title {
-  width: 1023px;
   height: 47px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 33px;
   background-color: #FF6060;
   color: white;
@@ -122,11 +124,9 @@ a#about:active {
 }
 
 #description {
-  width: 1023px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #F7F7F7;
   color: #FF6060;
+  border-radius: 5px;
 }
 
 h1 {
@@ -179,8 +179,6 @@ a#error-link {
 #location-banner {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #location-title {
@@ -192,10 +190,13 @@ a#error-link {
   justify-content: space-between;
 }
 
-#location-detail {
+.width-margin-location {
   width: 1240px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#location-detail {
   color: #FF6060;
   font-size: 18px;
   display: flex;
@@ -231,4 +232,40 @@ p#name {
   font-size: 14px;
   background-color: #FF6060;
   border-radius: 10px;
+}
+
+div#title.data {
+  width: 582px;
+  margin-top: 0;
+}
+
+div#description.location-data {
+  width: 550px;
+  height: 156px;
+  font-size: 18px;
+  padding: 40px 12px 53px 20px;
+  margin: 0;
+  line-height: 26px;
+}
+
+#options {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.location-description {
+  font-size: 18px;
+}
+
+.location-arrow {
+  left: 93%;
+}
+
+p.description.location-description {
+  padding: 0;
+}
+
+p.description.equipments-description {
+  font-size: 18px;
+  padding: 0;
 }
