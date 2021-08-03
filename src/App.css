@@ -9,14 +9,18 @@
   font-family: Montserrat;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a.underline {
+  text-decoration: underline;
+}
+
 ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-}
-
-a:link {
-  text-decoration: none;
 }
 
 #home, #about {
@@ -26,14 +30,6 @@ a:link {
 
 #about {
   margin-left: 57px;
-}
-
-a#home:active {
-  text-decoration: underline;
-}
-
-a#about:active {
-  text-decoration: underline;
 }
 
 #header {
