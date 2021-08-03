@@ -9,7 +9,7 @@ class About extends React.Component {
             <div>
                 <Header name="A propos" currentPage="about" />
 
-                <div id="about-banner">
+                <div id="about-banner" className="banner">
                 </div>
 
                 <Description name="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrements vérifiées par nos équipes." />

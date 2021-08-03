@@ -18,14 +18,14 @@ class Description extends React.Component {
         const {name} = this.props;
         const {description} = this.props;
         return (
-            <div>
-                <div onClick={this.handleClick} id="title">
+            <div id="be">
+                <div onClick={this.handleClick} id="title" className="width-margin-about">
                     <h1 >{name} </h1>
                     <img className="arrow" src={this.state.isOpen ? arrowOpen : arrowClose} />
                 </div>
                 {
                     this.state.isOpen && (
-                        <div id="description">
+                        <div id="description" className="width-margin-about">
                             <p className="description">{description} </p>
                         </div>
                     )
