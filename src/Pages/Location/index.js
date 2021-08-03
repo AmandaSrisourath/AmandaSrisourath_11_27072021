@@ -12,7 +12,7 @@ class Location extends React.Component {
             <div>
                 <Header />
 
-                <img id="location-banner" className="banner" src={locationBanner} />
+                <img id="location-banner" className="banner" src={locationBanner} alt="location-banner" />
 
                 <div id="location-detail" className="width-margin-location">
                     <div id="location-information">
@@ -28,10 +28,10 @@ class Location extends React.Component {
                     <div id="contact-detail">
                         <div id="location-contact">
                             <p id="name">Alexandre Dumas</p>
-                            <img id="host" src={host} />
+                            <img id="host" src={host} alt="host"/>
                         </div>
                         <div>
-                            <img src={rate} />
+                            <img src={rate} alt="rate"/>
                         </div>
                     </div>
                 </div>

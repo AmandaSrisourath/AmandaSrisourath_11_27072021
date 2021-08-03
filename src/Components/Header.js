@@ -7,7 +7,7 @@ class Header extends React.Component {
         const {currentPage} = this.props;
         return (
             <div id={"header"}>
-                <img src={logo} />
+                <img src={logo} alt="logo-kasa" />
 
                 <ul>
                     <li>

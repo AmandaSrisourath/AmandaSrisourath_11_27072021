@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 a:link {
@@ -66,7 +66,7 @@ ul {
   border-radius: 25px;
   width: 1240px;
   height: 829px;
-  margin: 43px auto 0px;
+  margin: 43px auto 0;
   padding-top: 56px;
 }
 

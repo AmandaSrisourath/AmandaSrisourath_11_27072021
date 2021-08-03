@@ -20,7 +20,7 @@ class LocationData extends React.Component {
             <div>
                 <div className="data" onClick={this.handleClick} id="title">
                     <h1>{name} </h1>
-                    <img className="arrow location-arrow" src={this.state.isOpen ? arrowOpen : arrowClose} />
+                    <img className="arrow location-arrow" src={this.state.isOpen ? arrowOpen : arrowClose} alt="arrow"/>
                 </div>
 
                 {

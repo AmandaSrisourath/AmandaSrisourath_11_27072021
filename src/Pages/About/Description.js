@@ -21,7 +21,7 @@ class Description extends React.Component {
             <div id="be">
                 <div onClick={this.handleClick} id="title" className="width-margin-about">
                     <h1 >{name} </h1>
-                    <img className="arrow" src={this.state.isOpen ? arrowOpen : arrowClose} />
+                    <img className="arrow" src={this.state.isOpen ? arrowOpen : arrowClose} alt="arrow"/>
                 </div>
                 {
                     this.state.isOpen && (
