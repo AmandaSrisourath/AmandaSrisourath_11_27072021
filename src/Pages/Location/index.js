@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer";
 import locationBanner from "../../Assets/location-banner.png";
 import host from "../../Assets/host.png";
 import rate from "../../Assets/rate.png";
+import LocationData from "./LocationData";
 
 class Location extends React.Component {
     render() {
@@ -11,9 +12,9 @@ class Location extends React.Component {
             <div>
                 <Header />
 
-                <img id="location-banner" src={locationBanner} />
+                <img id="location-banner" className="banner" src={locationBanner} />
 
-                <div id="location-detail">
+                <div id="location-detail" className="width-margin-location">
                     <div id="location-information">
                         <h1 id="location-title">Cozy loft on the Canal Saint-Martin</h1>
                         <p>Paris, île-de-France</p>
@@ -33,6 +34,11 @@ class Location extends React.Component {
                             <img src={rate} />
                         </div>
                     </div>
+                </div>
+
+                <div id="options" className="width-margin-location">
+                    <LocationData name="Description" description="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à 1 station de la gare de l'est (7 minutes à pied). "/>
+                    <LocationData name="Équipements" equipments={['Climatisation', 'Wi-Fi', 'Cuisine', 'Espace de travail', 'Fer à repasser', 'Sèche-cheveux', 'Cintres']} />
                 </div>
 
                 <Footer />

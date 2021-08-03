@@ -2,7 +2,7 @@ import React from "react";
 import arrowOpen from "../../Assets/arrow-open.png";
 import arrowClose from "../../Assets/arrow-close.png";
 
-class Location extends React.Component {
+class LocationData extends React.Component {
     constructor(props) {
         super(props);
         this.state = {isOpen: false};
@@ -15,18 +15,21 @@ class Location extends React.Component {
     }
 
     render() {
-        const {name} = this.props;
-        const {description} = this.props;
+        const {name, description, equipments = []} = this.props;
         return (
             <div>
-                <div onClick={this.handleClick} id="title">
-                    <h1 >{name} </h1>
-                    <img className="arrow" src={this.state.isOpen ? arrowOpen : arrowClose} />
+                <div className="data" onClick={this.handleClick} id="title">
+                    <h1>{name} </h1>
+                    <img className="arrow location-arrow" src={this.state.isOpen ? arrowOpen : arrowClose} />
                 </div>
+
                 {
                     this.state.isOpen && (
-                        <div id="description">
-                            <p className="description">{description} </p>
+                        <div id="description" className="location-data">
+                            <p className="description location-description">{description} </p>
+                            {equipments.map((equipment) =>
+                                <p className="description equipments-description" key={equipment}>{equipment}</p>
+                            )}
                         </div>
                     )
                 }
@@ -35,4 +38,4 @@ class Location extends React.Component {
     }
 }
 
-export default Description;
+export default LocationData;
