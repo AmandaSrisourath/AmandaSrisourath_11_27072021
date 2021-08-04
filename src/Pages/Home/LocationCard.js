@@ -3,11 +3,15 @@ import {Link} from "react-router-dom";
 
 class LocationCard extends React.Component {
     render() {
+        const {cover, title, id} = this.props;
         return (
-            <Link className="location-card" to="/Location">
-                <p className="location-title">Titre de la location</p>
+            <Link to={`/Location/${id}`}>
+                <div>
+                    <p className="location-title">{title}</p>
+                    <img src={cover} className="location-card"/>
+                </div>
             </Link>
-    )
+        )
     }
 }
 

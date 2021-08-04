@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header";
 import LocationCard from "./LocationCard";
+import data from "../../Assets/data.json";
 import Footer from "../../Components/Footer";
 
 class Home extends React.Component {
@@ -14,17 +15,16 @@ class Home extends React.Component {
                 </div>
 
                 <div id="main">
-                    <LocationCard />
-                    <LocationCard />
-                    <LocationCard />
-                    <LocationCard />
-                    <LocationCard />
-                    <LocationCard />
+                    {data.map((location) => {
+                        return (
+                            <LocationCard key={location.id} id={location.id} title={location.title} cover={location.cover} />
+                        )}
+                    )}
                 </div>
 
                 <Footer />
             </div>
-        );
+        )
     }
 }
 
