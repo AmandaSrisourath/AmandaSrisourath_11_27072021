@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import locationBanner from "../../Assets/location-banner.png";
@@ -8,6 +9,7 @@ import LocationData from "./LocationData";
 
 class Location extends React.Component {
     render() {
+        console.log(this.props);
         return (
             <div>
                 <Header />
@@ -47,4 +49,4 @@ class Location extends React.Component {
     }
 }
 
-export default Location;
+export default withRouter(Location);
