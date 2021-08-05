@@ -2,7 +2,6 @@ import React from "react";
 import { withRouter } from "react-router";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import locationBanner from "../../Assets/location-banner.png";
 import rate from "../../Assets/rate.png";
 import LocationData from "./LocationData";
 import data from "../../Assets/data.json";
@@ -19,7 +18,7 @@ class Location extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {foundLocation: {tags: [], host:{}, equipments: []}};
+        this.state = {foundLocation: {tags: [], host:{}, equipments: [], pictures: []}};
     }
 
     render() {
@@ -28,7 +27,9 @@ class Location extends React.Component {
             <div>
                 <Header />
 
-                <img id="location-banner" className="banner" src={locationBanner} alt="location-banner" />
+                {foundLocation.pictures.map((picture) =>
+                    <img id="location-banner" className="banner" key={picture} src={picture} alt="location-banner" />
+                )}
 
                 <div id="location-detail" className="width-margin-location">
                     <div id="location-information">

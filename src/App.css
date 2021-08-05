@@ -177,6 +177,8 @@ a#error-link {
 #location-banner {
   display: flex;
   justify-content: center;
+  height: 415px;
+  object-fit: cover;
 }
 
 #location-title {
