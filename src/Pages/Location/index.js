@@ -3,13 +3,27 @@ import { withRouter } from "react-router";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import locationBanner from "../../Assets/location-banner.png";
-import host from "../../Assets/host.png";
 import rate from "../../Assets/rate.png";
 import LocationData from "./LocationData";
+import data from "../../Assets/data.json";
 
 class Location extends React.Component {
+    componentDidMount() {
+        const {id} = this.props.match.params;
+        const locations = data;
+        const foundLocation = locations.find(location => location.id === id);
+        this.setState( {
+            foundLocation: foundLocation,
+        })
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {foundLocation: {tags: [], host:{}, equipments: []}};
+    }
+
     render() {
-        console.log(this.props);
+        const {foundLocation} = this.state;
         return (
             <div>
                 <Header />
@@ -18,19 +32,19 @@ class Location extends React.Component {
 
                 <div id="location-detail" className="width-margin-location">
                     <div id="location-information">
-                        <h1 id="location-title">Cozy loft on the Canal Saint-Martin</h1>
-                        <p>Paris, île-de-France</p>
+                        <h1 id="location-title">{foundLocation.title}</h1>
+                        <p>{foundLocation.location}</p>
                         <div id="tags">
-                            <p className="tag">Cozy</p>
-                            <p className="tag">Canal</p>
-                            <p className="tag">Paris 10</p>
+                            {foundLocation.tags.map((tag) =>
+                                <p className="tag" key={tag}>{tag}</p>
+                            )}
                         </div>
                     </div>
 
                     <div id="contact-detail">
                         <div id="location-contact">
-                            <p id="name">Alexandre Dumas</p>
-                            <img id="host" src={host} alt="host"/>
+                            <p id="name">{foundLocation.host.name}</p>
+                            <img id="host" src={foundLocation.host.picture} alt="host"/>
                         </div>
                         <div>
                             <img src={rate} alt="rate"/>
@@ -39,8 +53,15 @@ class Location extends React.Component {
                 </div>
 
                 <div id="options" className="width-margin-location">
-                    <LocationData name="Description" description="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à 1 station de la gare de l'est (7 minutes à pied). "/>
-                    <LocationData name="Équipements" equipments={['Climatisation', 'Wi-Fi', 'Cuisine', 'Espace de travail', 'Fer à repasser', 'Sèche-cheveux', 'Cintres']} />
+                    <LocationData
+                        name="Description"
+                        description={foundLocation.description}
+                    />
+
+                    <LocationData
+                        name="Équipements"
+                        equipments={foundLocation.equipments}
+                    />
                 </div>
 
                 <Footer />

@@ -15,7 +15,7 @@ class LocationData extends React.Component {
     }
 
     render() {
-        const {name, description, equipments = []} = this.props;
+        const {name, description, equipments =[]} = this.props;
         return (
             <div>
                 <div className="data" onClick={this.handleClick} id="title">
@@ -26,7 +26,7 @@ class LocationData extends React.Component {
                 {
                     this.state.isOpen && (
                         <div id="description" className="location-data">
-                            <p className="description location-description">{description} </p>
+                            <p className="description location-description">{description}</p>
                             {equipments.map((equipment) =>
                                 <p className="description equipments-description" key={equipment}>{equipment}</p>
                             )}

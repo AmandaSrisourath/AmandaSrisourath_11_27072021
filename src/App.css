@@ -215,11 +215,14 @@ a#error-link {
 #host {
   margin-left: 10px;
   margin-bottom: 24px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
 }
 
 p#name {
   margin-top: 10px;
-  width: 100px;
+  width: 90px;
 }
 
 .tag {
