@@ -1,10 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router";
 import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
+import Gallery from "./Gallery";
 import rate from "../../Assets/rate.png";
 import LocationData from "./LocationData";
 import data from "../../Assets/data.json";
+import Footer from "../../Components/Footer";
 
 class Location extends React.Component {
     componentDidMount() {
@@ -27,9 +28,7 @@ class Location extends React.Component {
             <div>
                 <Header />
 
-                {foundLocation.pictures.map((picture) =>
-                    <img id="location-banner" className="banner" key={picture} src={picture} alt="location-banner" />
-                )}
+                <Gallery pictures={foundLocation.pictures} />
 
                 <div id="location-detail" className="width-margin-location">
                     <div id="location-information">

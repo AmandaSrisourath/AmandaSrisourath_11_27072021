@@ -191,7 +191,7 @@ a#error-link {
 }
 
 .width-margin-location {
-  width: 1240px;
+  width: 86%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -254,6 +254,7 @@ div#description.location-data {
 #options {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 p.location-description {
@@ -271,6 +272,19 @@ p.description.location-description {
 p.description.equipments-description {
   font-size: 18px;
   padding: 0;
+}
+
+img.prev-next {
+  position: absolute;
+  top: 334px;
+}
+
+img.arrow-next {
+  right: 120px;
+}
+
+img.arrow-previous {
+  left: 120px;
 }
 
 @media only screen and (min-width : 375px) and (max-width : 768px) {
