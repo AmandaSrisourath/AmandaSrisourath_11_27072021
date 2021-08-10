@@ -274,9 +274,10 @@ p.description.equipments-description {
   padding: 0;
 }
 
-img.prev-next {
+img.arrow-next, .arrow-previous {
   position: absolute;
   top: 334px;
+  cursor: pointer;
 }
 
 img.arrow-next {
@@ -285,6 +286,15 @@ img.arrow-next {
 
 img.arrow-previous {
   left: 120px;
+}
+
+.carrousel-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  top: 530px;
+  right: 50%;
 }
 
 @media only screen and (min-width : 375px) and (max-width : 768px) {
