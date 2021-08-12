@@ -46,22 +46,15 @@ class Location extends React.Component {
                             <p id="name">{foundLocation.host.name}</p>
                             <img id="host" src={foundLocation.host.picture} alt="host"/>
                         </div>
-                        <div>
-                            <img src={rate} alt="rate"/>
+                        <div id="rate">
+                            <img className="rate" src={rate} alt="rate"/>
                         </div>
                     </div>
                 </div>
 
                 <div id="options" className="width-margin-location">
-                    <LocationData
-                        name="Description"
-                        description={foundLocation.description}
-                    />
-
-                    <LocationData
-                        name="Équipements"
-                        equipments={foundLocation.equipments}
-                    />
+                    <LocationData name="Description" description={foundLocation.description} />
+                    <LocationData name="Équipements" equipments={foundLocation.equipments} />
                 </div>
 
                 <Footer />

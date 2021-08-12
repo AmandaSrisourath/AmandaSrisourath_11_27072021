@@ -18,8 +18,8 @@ class Description extends React.Component {
         const {name} = this.props;
         const {description} = this.props;
         return (
-            <div id="be">
-                <div onClick={this.handleClick} id="title" className="width-margin-about">
+            <div id="about-description">
+                <div onClick={this.handleClick} id="title">
                     <h1 >{name} </h1>
                     <img className="arrow" src={this.state.isOpen ? arrowOpen : arrowClose} alt="arrow"/>
                 </div>

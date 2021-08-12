@@ -32,6 +32,13 @@ ul {
   margin-left: 57px;
 }
 
+#about-description {
+  width: 86%;
+  max-width: 1023px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #header {
   width: 86%;
   margin: 40px auto 63px auto;
@@ -52,10 +59,12 @@ ul {
 }
 
 .banner-title {
+  width: 86%;
   position: absolute;
+  text-align: center;
   color: white;
   font-size: 48px;
-  margin: 78px 262px 77px 273px;
+  margin-top: 5.5%;
 }
 
 #main {
@@ -83,7 +92,7 @@ ul {
   width: 235px;
   color: white;
   font-size: 18px;
-  margin: 268px 20px 20px;
+  margin: 276px 20px 20px;
 }
 
 #footer {
@@ -104,12 +113,6 @@ ul {
 #about-banner {
   height: 223px;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("Assets/about-banner.png");
-}
-
-.width-margin-about {
-  width: 1023px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #title {
@@ -138,6 +141,7 @@ h1:hover {
 }
 
 p.description {
+  max-width: 1023px;
   margin: 0;
   padding: 34px 27px 19px 18px;
   font-size: 24px;
@@ -243,8 +247,8 @@ div#title.data {
 }
 
 div#description.location-data {
-  width: 550px;
-  height: 156px;
+  max-width: 550px;
+  height: auto;
   font-size: 18px;
   padding: 40px 12px 53px 20px;
   margin: 0;
@@ -297,9 +301,9 @@ img.arrow-previous {
   right: 50%;
 }
 
-@media only screen and (min-width : 375px) and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
   #header {
-    width: 89%;
+    width: 89.34%;
     height: 47px;
     margin-top: 20px;
     margin-bottom: 16px;
@@ -322,15 +326,20 @@ img.arrow-previous {
   }
 
   #home-banner {
-    width: 89%;
+    width: 89.34%;
     height: 111px;
     background-position: center;
+    border-radius: 10px;
   }
 
   .banner-title {
+    width: 59%;
     font-size: 24px;
-    margin: 31px 102px 32px 16px;
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
     line-height: 24px;
+    text-align: left;
   }
 
   div#main {
@@ -341,7 +350,8 @@ img.arrow-previous {
     padding-top: 22px;
   }
 
-  a.location-card {
+  img.location-card {
+    width: 335px;
     height: 255px;
     margin-bottom: 20px;
   }
@@ -356,5 +366,170 @@ img.arrow-previous {
 
   img#logo-rights-footer {
     width: 50%;
+  }
+
+  /* location */
+  img#location-banner.banner {
+    width: 89.34%;
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  img.arrow-previous, img.arrow-next {
+    width: 12px;
+    height: 20px;
+    top: 200px;
+  }
+
+  img.arrow-previous {
+    left: 30px;
+  }
+
+  img.arrow-next {
+    right: 30px;
+  }
+
+  .carrousel-text {
+    display: none;
+  }
+
+  h1#location-title {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #tags {
+    justify-content: left;
+  }
+
+  p.tag {
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px 0 0;
+  }
+
+  #location-detail {
+    display: flex;
+    flex-direction: column;
+    width: 89.34%;
+  }
+
+  #contact-detail {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #location-contact {
+    margin-top: 0;
+  }
+
+  #rate {
+    display: flex;
+  }
+
+  img.rate {
+    width: 98px;
+    height: 18px;
+    align-self: center;
+  }
+
+  img#host {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    align-self: center;
+  }
+
+  p#name {
+    width: 60px;
+    align-self: center;
+    font-size: 12px;
+  }
+
+  #options {
+    width: 89.34%;
+  }
+
+  #details {
+    width: 100%;
+  }
+
+  div#title.data {
+    width: 100%;
+    height: 30px;
+  }
+
+  div#description.location-data {
+    max-width: none;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 4px;
+  }
+
+  h1 {
+    font-size: 13px;
+  }
+
+  p.description.equipments-description, .description.location-description {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  img.arrow {
+    width: 17px;
+    bottom: 119%;
+  }
+
+  /* About */
+  div#about-banner.banner {
+    width: 89.34%;
+    height: 223px;
+    border-radius: 10px;
+    background-position: right;
+  }
+
+  #title {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  #about-description {
+    width: 89.34%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.arrow {
+    left: 93%;
+  }
+
+  p.description {
+    max-width: none;
+    padding-top: 17px;
+    font-size: 12px;
+  }
+
+  /* error */
+  p#error-number {
+    font-size: 96px;
+    margin-top: 195px;
+  }
+
+  p#error-text {
+    width: 58%;
+    margin: 0 auto 133px auto;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  a#error-link {
+    font-size: 14px;
   }
 }
