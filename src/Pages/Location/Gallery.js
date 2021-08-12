@@ -21,13 +21,12 @@ class Gallery extends React.Component {
     }
 
     render() {
-        console.log(this.state.currentIndex);
         const {pictures = []} = this.props;
         return (
             <div>
                 <img id="location-banner" className="banner" src={pictures[this.state.currentIndex]} alt="location-banner" />
-                <img className="arrow-previous" onClick={this.previousClick} src={pictures.length > 1 && arrowPrevious} />
-                <img className="arrow-next" onClick={this.nextClick} src={pictures.length > 1 && arrowNext} />
+                <img className="arrow-previous" onClick={this.previousClick} src={pictures.length > 1 ? arrowPrevious : undefined} alt="arrow-previous" />
+                <img className="arrow-next" onClick={this.nextClick} src={pictures.length > 1 ? arrowNext : undefined} alt="arrow-next"/>
                 <p className="carrousel-text">{this.state.currentIndex +1}/{pictures.length} </p>
             </div>
         )

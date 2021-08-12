@@ -6,8 +6,8 @@ class Footer extends React.Component {
     render() {
         return (
             <div id="footer">
-                <img id="logo-footer" src={logoFooter} />
-                <img id="logo-rights-footer" src={AllRights} />
+                <img id="logo-footer" src={logoFooter} alt="logo-footer" />
+                <img id="logo-rights-footer" src={AllRights} alt="logo-rights-footer" />
             </div>
         );
     }

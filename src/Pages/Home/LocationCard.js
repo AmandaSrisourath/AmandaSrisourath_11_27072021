@@ -8,7 +8,7 @@ class LocationCard extends React.Component {
             <Link to={`/Location/${id}`}>
                 <div>
                     <p className="location-title">{title}</p>
-                    <img src={cover} className="location-card"/>
+                    <img src={cover} className="location-card" alt="cover" />
                 </div>
             </Link>
         )

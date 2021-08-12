@@ -301,6 +301,10 @@ img.arrow-previous {
   right: 50%;
 }
 
+img.rate {
+  position: absolute;
+}
+
 @media only screen and (max-width : 768px) {
   #header {
     width: 89.34%;
@@ -429,13 +433,13 @@ img.arrow-previous {
     margin-top: 0;
   }
 
-  #rate {
+  #rating {
     display: flex;
   }
 
-  img.rate {
-    width: 98px;
-    height: 18px;
+  img.rating {
+    width: 15px;
+    height: 15px;
     align-self: center;
   }
 
