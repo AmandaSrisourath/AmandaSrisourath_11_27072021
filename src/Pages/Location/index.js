@@ -2,10 +2,10 @@ import React from "react";
 import { withRouter } from "react-router";
 import Header from "../../Components/Header";
 import Gallery from "./Gallery";
-import rate from "../../Assets/rate.png";
 import LocationData from "./LocationData";
 import data from "../../Assets/data.json";
 import Footer from "../../Components/Footer";
+import Rating from "./Rating";
 
 class Location extends React.Component {
     componentDidMount() {
@@ -19,7 +19,7 @@ class Location extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {foundLocation: {tags: [], host:{}, equipments: [], pictures: []}};
+        this.state = {foundLocation: {tags: [], host:{}, equipments: [], pictures: [], rating:''}};
     }
 
     render() {
@@ -44,17 +44,15 @@ class Location extends React.Component {
                     <div id="contact-detail">
                         <div id="location-contact">
                             <p id="name">{foundLocation.host.name}</p>
-                            <img id="host" src={foundLocation.host.picture} alt="host"/>
+                            <img id="host" src={foundLocation.host.picture} alt="host" />
                         </div>
-                        <div id="rate">
-                            <img className="rate" src={rate} alt="rate"/>
-                        </div>
+                        <Rating rating={foundLocation.rating} />
                     </div>
                 </div>
 
                 <div id="options" className="width-margin-location">
                     <LocationData name="Description" description={foundLocation.description} />
-                    <LocationData name="Équipements" equipments={foundLocation.equipments} />
+                    <LocationData name="Equipments" equipments={foundLocation.equipments} />
                 </div>
 
                 <Footer />
