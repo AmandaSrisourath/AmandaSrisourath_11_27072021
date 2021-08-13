@@ -8,18 +8,20 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Header name="Accueil" currentPage="home" />
+                <div id="container">
+                    <Header name="Accueil" currentPage="home" />
 
-                <div id="home-banner" className="banner">
-                    <p className="banner-title">Chez vous, partout et ailleurs</p>
-                </div>
+                    <div id="home-banner" className="banner">
+                        <p className="banner-title">Chez vous, partout et ailleurs</p>
+                    </div>
 
-                <div id="main">
-                    {data.map((location) => {
-                        return (
-                            <LocationCard key={location.id} id={location.id} title={location.title} cover={location.cover} />
+                    <div id="main">
+                        {data.map((location) => {
+                            return (
+                                <LocationCard key={location.id} id={location.id} title={location.title} cover={location.cover} />
+                            )}
                         )}
-                    )}
+                    </div>
                 </div>
 
                 <Footer />

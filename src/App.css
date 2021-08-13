@@ -9,6 +9,12 @@
   font-family: Montserrat, Arial, sans-serif;
 }
 
+#container {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -33,23 +39,19 @@ ul {
 }
 
 #about-description {
-  width: 86%;
   max-width: 1023px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #header {
-  width: 86%;
   margin: 40px auto 63px auto;
   display: flex;
   justify-content: space-between;
 }
 
 .banner {
-  width: 86%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -73,9 +75,9 @@ ul {
   flex-wrap: wrap;
   background-color: #F7F7F7;
   border-radius: 25px;
-  width: 86%;
   margin: 43px auto 0;
-  padding-top: 56px;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .location-card {
@@ -83,7 +85,7 @@ ul {
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin: 25px 25px;
   object-fit: cover;
 }
 
@@ -92,7 +94,7 @@ ul {
   width: 235px;
   color: white;
   font-size: 18px;
-  margin: 276px 20px 20px;
+  margin: 301px 40px 20px 50px;
 }
 
 #footer {
@@ -194,12 +196,6 @@ a#error-link {
   justify-content: space-between;
 }
 
-.width-margin-location {
-  width: 86%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #location-detail {
   color: #FF6060;
   font-size: 18px;
@@ -269,13 +265,12 @@ p.location-description {
   left: 93%;
 }
 
-p.description.location-description {
+p.description.location-description, p.description.equipments-description {
   padding: 0;
 }
 
 p.description.equipments-description {
   font-size: 18px;
-  padding: 0;
 }
 
 img.arrow-next, .arrow-previous {
@@ -301,13 +296,14 @@ img.arrow-previous {
   right: 50%;
 }
 
-img.rate {
-  position: absolute;
-}
-
 @media only screen and (max-width : 768px) {
-  #header {
+  div#container {
     width: 89.34%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header {
     height: 47px;
     margin-top: 20px;
     margin-bottom: 16px;
@@ -318,19 +314,19 @@ img.rate {
     height: 47px;
   }
 
-  a#home {
-    font-size: 12px;
+  ul {
     text-transform: uppercase;
+  }
+
+  a#home, a#about {
+    font-size: 12px;
   }
 
   a#about {
     margin-left: 10px;
-    font-size: 12px;
-    text-transform: uppercase;
   }
 
   #home-banner {
-    width: 89.34%;
     height: 111px;
     background-position: center;
     border-radius: 10px;
@@ -339,29 +335,27 @@ img.rate {
   .banner-title {
     width: 59%;
     font-size: 24px;
-    margin-top: 32px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 32px 16px;
     line-height: 24px;
     text-align: left;
   }
 
   div#main {
+    display: block;
     background-color: white;
-    width: 335px;
     height: auto;
     margin-top: 0;
-    padding-top: 22px;
+    padding: 0;
   }
 
   img.location-card {
-    width: 335px;
+    width: 100%;
     height: 255px;
-    margin-bottom: 20px;
+    margin: 20px 0 0;
   }
 
   .location-title {
-    margin: 188px 20px 15px 20px;
+    margin: 221px 20px 15px 20px;
   }
 
   div#footer {
@@ -374,7 +368,6 @@ img.rate {
 
   /* location */
   img#location-banner.banner {
-    width: 89.34%;
     height: 255px;
     border-radius: 10px;
   }
@@ -421,7 +414,6 @@ img.rate {
   #location-detail {
     display: flex;
     flex-direction: column;
-    width: 89.34%;
   }
 
   #contact-detail {
@@ -456,10 +448,6 @@ img.rate {
     font-size: 12px;
   }
 
-  #options {
-    width: 89.34%;
-  }
-
   #details {
     width: 100%;
   }
@@ -492,7 +480,6 @@ img.rate {
 
   /* About */
   div#about-banner.banner {
-    width: 89.34%;
     height: 223px;
     border-radius: 10px;
     background-position: right;
@@ -502,12 +489,6 @@ img.rate {
     width: 100%;
     height: 30px;
     margin-top: 20px;
-  }
-
-  #about-description {
-    width: 89.34%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   img.arrow {

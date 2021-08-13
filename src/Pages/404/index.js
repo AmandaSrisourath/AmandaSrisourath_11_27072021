@@ -4,7 +4,7 @@ import Header from "../../Components/Header";
 
 const PageNotFound = () => (
     <div>
-        <div>
+        <div id="container">
             <Header />
 
             <div>
