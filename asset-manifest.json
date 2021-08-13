@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/AmandaSrisourath_11_27072021/static/css/main.b3c31741.chunk.css",
+    "main.js": "/AmandaSrisourath_11_27072021/static/js/main.c95ef27a.chunk.js",
+    "main.js.map": "/AmandaSrisourath_11_27072021/static/js/main.c95ef27a.chunk.js.map",
+    "runtime-main.js": "/AmandaSrisourath_11_27072021/static/js/runtime-main.eb62c0e3.js",
+    "runtime-main.js.map": "/AmandaSrisourath_11_27072021/static/js/runtime-main.eb62c0e3.js.map",
+    "static/js/2.ded1ff01.chunk.js": "/AmandaSrisourath_11_27072021/static/js/2.ded1ff01.chunk.js",
+    "static/js/2.ded1ff01.chunk.js.map": "/AmandaSrisourath_11_27072021/static/js/2.ded1ff01.chunk.js.map",
+    "static/js/3.669d700e.chunk.js": "/AmandaSrisourath_11_27072021/static/js/3.669d700e.chunk.js",
+    "static/js/3.669d700e.chunk.js.map": "/AmandaSrisourath_11_27072021/static/js/3.669d700e.chunk.js.map",
+    "index.html": "/AmandaSrisourath_11_27072021/index.html",
+    "static/css/main.b3c31741.chunk.css.map": "/AmandaSrisourath_11_27072021/static/css/main.b3c31741.chunk.css.map",
+    "static/js/2.ded1ff01.chunk.js.LICENSE.txt": "/AmandaSrisourath_11_27072021/static/js/2.ded1ff01.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/AmandaSrisourath_11_27072021/static/media/home-banner.024f945a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb62c0e3.js",
+    "static/js/2.ded1ff01.chunk.js",
+    "static/css/main.b3c31741.chunk.css",
+    "static/js/main.c95ef27a.chunk.js"
+  ]
+}
