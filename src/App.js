@@ -12,7 +12,7 @@ import PageNotFound from "./Pages/404";
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -23,9 +23,7 @@ function App() {
                 <Route path="/about">
                     <About />
                 </Route>
-                <Route>
-                    <PageNotFound />
-                </Route>
+                <Route component={PageNotFound} />
             </Switch>
         </Router>
     );
