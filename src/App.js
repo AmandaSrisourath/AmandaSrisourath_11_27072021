@@ -23,9 +23,9 @@ function App() {
                 <Route path="/about">
                     <About />
                 </Route>
-                <Route exact path="/" />
+                <Route>
                     <PageNotFound />
-                <Route />
+                </Route>
             </Switch>
         </Router>
     );
