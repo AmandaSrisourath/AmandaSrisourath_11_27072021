@@ -2,7 +2,7 @@ import React from "react";
 import arrowOpen from "../../Assets/arrow-open.png";
 import arrowClose from "../../Assets/arrow-close.png";
 
-class LocationData extends React.Component {
+class Collapse extends React.Component {
     constructor(props) {
         super(props);
         this.state = {isOpen: false};
@@ -15,18 +15,17 @@ class LocationData extends React.Component {
     }
 
     render() {
-        const {name, description, equipments =[]} = this.props;
+        const {name, description, equipments=[], className} = this.props;
         return (
-            <div id="details">
-                <div className="data" onClick={this.handleClick} id="title">
-                    <h1>{name} </h1>
-                    <img className="arrow location-arrow" src={this.state.isOpen ? arrowOpen : arrowClose} alt="arrow"/>
+            <div className={className}>
+                <div id="title" onClick={this.handleClick}>
+                    <h1 >{name} </h1>
+                    <img className="arrow" src={this.state.isOpen ? arrowOpen : arrowClose} alt="arrow"/>
                 </div>
-
                 {
                     this.state.isOpen && (
-                        <div id="description" className="location-data">
-                            <p className="description location-description">{description}</p>
+                        <div className="descriptions">
+                            <p className="description">{description} </p>
                             {equipments.map((equipment) =>
                                 <p className="description equipments-description" key={equipment}>{equipment}</p>
                             )}
@@ -38,4 +37,4 @@ class LocationData extends React.Component {
     }
 }
 
-export default LocationData;
+export default Collapse;

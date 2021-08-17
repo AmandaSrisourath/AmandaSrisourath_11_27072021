@@ -2,10 +2,11 @@ import React from "react";
 import { withRouter } from "react-router";
 import Header from "../../Components/Header";
 import Gallery from "./Gallery";
-import LocationData from "./LocationData";
 import data from "../../Assets/data.json";
-import Footer from "../../Components/Footer";
 import Rating from "./Rating";
+import Collapse from "../About/Collapse";
+import Footer from "../../Components/Footer";
+
 
 class Location extends React.Component {
     componentDidMount() {
@@ -31,7 +32,7 @@ class Location extends React.Component {
 
                     <Gallery pictures={foundLocation.pictures} />
 
-                    <div id="location-detail" className="width-margin-location">
+                    <div id="location-detail">
                         <div id="location-information">
                             <h1 id="location-title">{foundLocation.title}</h1>
                             <p>{foundLocation.location}</p>
@@ -51,9 +52,13 @@ class Location extends React.Component {
                         </div>
                     </div>
 
-                    <div id="options" className="width-margin-location">
-                        <LocationData name="Description" description={foundLocation.description} />
-                        <LocationData name="Equipments" equipments={foundLocation.equipments} />
+                    <div id="location-collapse">
+                        <div className="location-description">
+                            <Collapse name="Description" description={foundLocation.description} />
+                        </div>
+                        <div className="location-description">
+                            <Collapse name="Equipments" equipments={foundLocation.equipments} />
+                        </div>
                     </div>
                 </div>
 
