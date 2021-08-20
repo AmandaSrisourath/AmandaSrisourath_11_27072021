@@ -7,8 +7,9 @@ class LocationCard extends React.Component {
         return (
             <Link to={`/Location/${id}`}>
                 <div>
-                    <p className="location-title">{title}</p>
-                    <img src={cover} className="location-card" alt="cover" />
+                    <div style={{"--img": `url(${cover})`}} className="location-card" alt="cover">
+                        <p className="location-title">{title}</p>
+                    </div>
                 </div>
             </Link>
         )

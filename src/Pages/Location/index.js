@@ -6,16 +6,23 @@ import data from "../../Assets/data.json";
 import Rating from "./Rating";
 import Collapse from "../About/Collapse";
 import Footer from "../../Components/Footer";
-
+import PageNotFound from "../404";
 
 class Location extends React.Component {
     componentDidMount() {
         const {id} = this.props.match.params;
         const locations = data;
         const foundLocation = locations.find(location => location.id === id);
-        this.setState( {
-            foundLocation: foundLocation,
-        })
+
+        if (foundLocation) {
+            this.setState( {
+                foundLocation: foundLocation,
+            })
+        } else {
+            this.setState( {
+                error: true,
+            })
+        }
     }
 
     constructor(props) {
@@ -24,7 +31,14 @@ class Location extends React.Component {
     }
 
     render() {
-        const {foundLocation} = this.state;
+        const {foundLocation, error} = this.state;
+
+        if (error) {
+            return (
+                <PageNotFound />
+            )
+        }
+
         return (
             <div>
                 <div id="container">
