@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/AmandaSrisourath_11_27072021/static/css/main.8d3e5b6e.chunk.css",
-    "main.js": "/AmandaSrisourath_11_27072021/static/js/main.00278deb.chunk.js",
-    "main.js.map": "/AmandaSrisourath_11_27072021/static/js/main.00278deb.chunk.js.map",
-    "runtime-main.js": "/AmandaSrisourath_11_27072021/static/js/runtime-main.eb62c0e3.js",
-    "runtime-main.js.map": "/AmandaSrisourath_11_27072021/static/js/runtime-main.eb62c0e3.js.map",
-    "static/js/2.4248200d.chunk.js": "/AmandaSrisourath_11_27072021/static/js/2.4248200d.chunk.js",
-    "static/js/2.4248200d.chunk.js.map": "/AmandaSrisourath_11_27072021/static/js/2.4248200d.chunk.js.map",
-    "static/js/3.669d700e.chunk.js": "/AmandaSrisourath_11_27072021/static/js/3.669d700e.chunk.js",
-    "static/js/3.669d700e.chunk.js.map": "/AmandaSrisourath_11_27072021/static/js/3.669d700e.chunk.js.map",
-    "index.html": "/AmandaSrisourath_11_27072021/index.html",
-    "static/css/main.8d3e5b6e.chunk.css.map": "/AmandaSrisourath_11_27072021/static/css/main.8d3e5b6e.chunk.css.map",
-    "static/js/2.4248200d.chunk.js.LICENSE.txt": "/AmandaSrisourath_11_27072021/static/js/2.4248200d.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/AmandaSrisourath_11_27072021/static/media/home-banner.024f945a.png"
+    "main.css": "/Kasa/static/css/main.8b3eff90.chunk.css",
+    "main.js": "/Kasa/static/js/main.00278deb.chunk.js",
+    "main.js.map": "/Kasa/static/js/main.00278deb.chunk.js.map",
+    "runtime-main.js": "/Kasa/static/js/runtime-main.cad0ab6a.js",
+    "runtime-main.js.map": "/Kasa/static/js/runtime-main.cad0ab6a.js.map",
+    "static/js/2.4248200d.chunk.js": "/Kasa/static/js/2.4248200d.chunk.js",
+    "static/js/2.4248200d.chunk.js.map": "/Kasa/static/js/2.4248200d.chunk.js.map",
+    "static/js/3.669d700e.chunk.js": "/Kasa/static/js/3.669d700e.chunk.js",
+    "static/js/3.669d700e.chunk.js.map": "/Kasa/static/js/3.669d700e.chunk.js.map",
+    "index.html": "/Kasa/index.html",
+    "static/css/main.8b3eff90.chunk.css.map": "/Kasa/static/css/main.8b3eff90.chunk.css.map",
+    "static/js/2.4248200d.chunk.js.LICENSE.txt": "/Kasa/static/js/2.4248200d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Kasa/static/media/home-banner.024f945a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb62c0e3.js",
+    "static/js/runtime-main.cad0ab6a.js",
     "static/js/2.4248200d.chunk.js",
-    "static/css/main.8d3e5b6e.chunk.css",
+    "static/css/main.8b3eff90.chunk.css",
     "static/js/main.00278deb.chunk.js"
   ]
 }
