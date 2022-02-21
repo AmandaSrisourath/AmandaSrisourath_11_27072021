@@ -2,7 +2,7 @@
   "name": "Kasa",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://amandasrisourath.github.io/AmandaSrisourath_11_27072021",
+  "homepage": "https://amandasrisourath.github.io/Kasa",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
